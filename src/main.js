@@ -32,48 +32,67 @@ let generateShop = () => {
 generateShop()
 
 let increment = (id) => {
-    let selectedItem = id; 
-    
-    let search = basket.find((x) => x.id === selectedItem.id) 
-    if (search === undefined){
-        basket.push({
-            id: selectedItem.id, 
-            item: 1, 
-        })
-    }
-    else {
-        search.item += 1; 
-    }
-   update(selectedItem.id)
-}
+    let selectedItem = id;
 
+    // Find the product in shopItemsData by its id
+    let product = shopItemsData.find((x) => x.id === selectedItem.id);
+
+    let search = basket.find((x) => x.id === selectedItem.id);
+    if (search === undefined) {
+        basket.push({
+            id: selectedItem.id,
+            item: 1,
+            product: product, // Store the entire product object
+        });
+    } else {
+        search.item += 1;
+    }
+    update(selectedItem.id);
+}
 
 let decrement = (id) => {
-    let selectedItem = id; 
-    let search = basket.find((x) => x.id === selectedItem.id) 
-    if (search === undefined){
-        return 
-    }else if (search.item === 0){
-        return
+    let selectedItem = id;
+
+    // Find the product in shopItemsData by its id
+    let product = shopItemsData.find((x) => x.id === selectedItem.id);
+
+    let search = basket.find((x) => x.id === selectedItem.id);
+    if (search === undefined) {
+        return;
+    } else if (search.item === 0) {
+        return;
+    } else {
+        search.item -= 1;
     }
-    else {
-        search.item -= 1; 
-    }
-    update(selectedItem.id)
+    update(selectedItem.id);
 }
+
     
 
 
 let update = (id) => {
-    let search = basket.find((x) => x.id === id)
-    document.getElementById(id).innerHTML = search.item; 
+    let search = basket.find((x) => x.id === id);
+    let quantityElement = document.getElementById(id);
+
+    if (search) {
+        let product = search.product;
+        let quantity = search.item;
+
+        // Update the quantity displayed in the cart
+        quantityElement.innerHTML = quantity;
+
+        // You can also access other product details here if needed
+        let productName = product.name;
+        let productPrice = product.price;
+    }
 }
 
+
 let calculation = () => {
-    let cartIcon = document.getElementById("cartAmount"); 
-    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x+y, 0);
-    basket = basket.filter((x) => x.item !==0)
-    localStorage.setItem("data", JSON.stringify(basket))
-} 
+    let cartIcon = document.getElementById("cartAmount");
+    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+    localStorage.setItem("data", JSON.stringify(basket)); // Store the entire basket
+}
+
 
 calculation ()

@@ -13,13 +13,14 @@ let calculation = () => {
 calculation ()
 
 let generateCartItems = () => {
-    if(basket.length !==0){
+    if (basket.length !== 0) {
         return (
-        shoppingCart.innerHTML = basket.map((x) => { 
-        let {id, item} = x; 
-        let search = shopItemsData.find((y) =>y.id === id) || []
-        let {img, name, price} = search
-        return `
+            shoppingCart.innerHTML = basket.map((x) => {
+                let { id, item } = x;
+                let search = shopItemsData.find((y) => y.id === id) || [];
+                let { img, name, price } = search;
+
+                return `
         <div  class="cart-item" >
             <img width="100" src="${img}" alt="" />
             <div class="details">
@@ -47,11 +48,13 @@ let generateCartItems = () => {
         shoppingCart.innerHTML = ``
         label.innerHTML = `
         <h2>your order list is empty</h2>
-        <a href="food.html">
+        <a href="index.html">
         <button class="HomeBtn">Back to Home</button>
         `
     }
 }
+
+
 
 generateCartItems()
 
@@ -135,25 +138,45 @@ let clearCart = () => {
 
 
 
-const data = [
-    { id: 'food01', item: 4 },
-    { id: 'food02', item: 4 },
-    { id: 'food03', item: 3 },
-    { id: 'food04', item: 4 }
-  ];
-  
-  // Format the data as a text message
-  const message = data.map(item => `${item.id}: ${item.item}`).join('%0A'); // Use %0A for line breaks
-  
-  // Specify the recipient's phone number with the country code (e.g., +1234567890)
-  const recipientPhoneNumber = '+254708445839'; // Replace with the recipient's actual phone number
-  
-  // Function to send an SMS message
-  function sendSMS() {
+// Define the data
+
+
+
+function sendSMS() {
+    // Collect cart item data and calculate total price
+    const cartItemData = basket.map((x) => {
+        let { id, item } = x;
+        let search = shopItemsData.find((y) => y.id === id) || [];
+        let { name, price } = search;
+
+        return {
+            name: name,
+            price: price,
+            quantity: item
+        };
+    });
+
+    // Calculate the total price using let
+    let totalPrice = cartItemData.reduce((total, item) => {
+        return total + item.price * item.quantity;
+    }, 0);
+
+    // Create the message with cart item data and total price
+    let message = cartItemData.map(item => `${item.name} Quantity: ${item.quantity} @: ${item.price}`).join('%0A')
+    message+= `%0AYour total is ${totalPrice}`
+
+    const recipientPhoneNumber = '+254770653517'; // Replace with the recipient's actual phone number
+
     // Generate the SMS link with the precomposed message
     const smsLink = `sms:${recipientPhoneNumber}?body=${message}`;
   
     // Open the SMS link to open the default messaging app with the precomposed message
     window.open(smsLink);
 }
+
+
+
+
+
+
 
