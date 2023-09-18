@@ -118,7 +118,7 @@ let totalAmount = () =>{
             return item *search.price;
         }).reduce((x,y) => x+y, 0)
         label.innerHTML = `<h2>Total Bill: Ksh. ${amount}</h2>
-        <button onclick = "sendWhatsApp()" class="checkout">Send Order by WhatsApp (Delivery Only)</button>
+        <button onclick="sendSMS()" class="checkout">Send Order by SMS (Delivery Only)</button>
 
         <button onclick="clearCart()" class="removeAll"> Clear Cart </button>`
     }else return
@@ -133,9 +133,8 @@ let clearCart = () => {
     calculation ()
 }
 
-sendWhatsApp = () =>{
-    
-    // Define the data
+
+
 const data = [
     { id: 'food01', item: 4 },
     { id: 'food02', item: 4 },
@@ -144,19 +143,17 @@ const data = [
   ];
   
   // Format the data as a text message
-  const message = data.map(item => `${item.id}: ${item.item}`).join('\n');
+  const message = data.map(item => `${item.id}: ${item.item}`).join('%0A'); // Use %0A for line breaks
   
-  // Function to send an SMS message (you would need to replace this with an actual SMS sending solution)
-  function sendSMS(phoneNumber, message) {
-    // In a real implementation, you would use an SMS gateway or service to send the message
-    // This is a simplified example:
-    console.log(`Sending SMS to ${phoneNumber}: ${message}`);
-  }
+  // Specify the recipient's phone number with the country code (e.g., +1234567890)
+  const recipientPhoneNumber = '+254708445839'; // Replace with the recipient's actual phone number
   
-  // Specify the recipient's phone number
-  const recipientPhoneNumber = '+254770653517'; // Replace with the recipient's actual phone number
+  // Function to send an SMS message
+  function sendSMS() {
+    // Generate the SMS link with the precomposed message
+    const smsLink = `sms:${recipientPhoneNumber}?body=${message}`;
   
-  // Send the SMS message
-  sendSMS(recipientPhoneNumber, message);
-  
+    // Open the SMS link to open the default messaging app with the precomposed message
+    window.open(smsLink);
 }
+
