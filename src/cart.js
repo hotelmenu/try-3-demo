@@ -165,7 +165,7 @@ function sendSMS() {
     let message = cartItemData.map(item => `${item.name} Quantity: ${item.quantity} @: ${item.price}`).join('%0A')
     message+= `%0AYour total is ${totalPrice}`
 
-    const recipientPhoneNumber = '+254770653517'; // Replace with the recipient's actual phone number
+    const recipientPhoneNumber = '+254111593229'; // Replace with the recipient's actual phone number
 
     // Generate the SMS link with the precomposed message
     const smsLink = `sms:${recipientPhoneNumber}?body=${message}`;
