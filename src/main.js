@@ -3,6 +3,9 @@ let shop = document.getElementById('shop')
 
 let basket = JSON.parse(localStorage.getItem("data")) || []
 
+const vibrate = (ms) => {
+    navigator.vibrate(300)
+}
 
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData.map((x) => {
@@ -48,6 +51,7 @@ let increment = (id) => {
         search.item += 1;
     }
     update(selectedItem.id);
+    vibrate()
 }
 
 let decrement = (id) => {
@@ -65,6 +69,7 @@ let decrement = (id) => {
         search.item -= 1;
     }
     update(selectedItem.id);
+    vibrate()
 }
 
     
@@ -85,6 +90,7 @@ let update = (id) => {
         let productName = product.name;
         let productPrice = product.price;
     }
+    vibrate()
 }
 
 

@@ -2,6 +2,9 @@ let label = document.getElementById('label')
 let shoppingCart = document.getElementById('shopping-cart')
 let basket = JSON.parse(localStorage.getItem("data")) || []
 
+const vibrate = (ms) => {
+    navigator.vibrate(300)
+}
 
 let calculation = () => {
     let cartIcon = document.getElementById("cartAmount"); 
@@ -76,6 +79,7 @@ let increment = (id) => {
    update(selectedItem.id)
    calculation ()
    totalAmount()
+   vibrate()
 }
 
 
@@ -95,6 +99,7 @@ let decrement = (id) => {
     generateCartItems()
     calculation ()
     totalAmount()
+    vibrate()
 }
 
 
@@ -111,6 +116,7 @@ let removeItem = (id) => {
     generateCartItems()
     calculation ()
     totalAmount()
+    vibrate()
 }
 
 let totalAmount = () =>{
@@ -172,6 +178,7 @@ function sendSMS() {
   
     // Open the SMS link to open the default messaging app with the precomposed message
     window.open(smsLink);
+    vibrate()
 }
 
 
