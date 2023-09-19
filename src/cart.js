@@ -3,7 +3,7 @@ let shoppingCart = document.getElementById('shopping-cart')
 let basket = JSON.parse(localStorage.getItem("data")) || []
 
 const vibrate = (ms) => {
-    navigator.vibrate(300)
+    navigator.vibrate(100)
 }
 
 let calculation = () => {
