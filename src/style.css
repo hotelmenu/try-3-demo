@@ -18,8 +18,10 @@ body{
     --color-2: green; 
     --color-3: #fff;
     --color-4: rgb(0, 0, 0); 
+    --color-restaurant-bar: rgb(255, 255, 255); 
     --color-cards-5: var(--color-1);
     --box-shadow-1: 0 0.25rem 1.25rem 0.25rem var(--color-4); 
+    --text-shadow: 0.125em 0.125em 0.25em var(--color-4);
     
 }
 
@@ -226,7 +228,7 @@ a {
     background-color: var(--color-1);
 }
 
-/* index section */
+/* !index section */
 .btn-area{
     display: flex;
     flex-direction: column;
@@ -236,9 +238,7 @@ a {
     align-items: center;
 }
 
-.black {
-    background-color: var(--color-4);
-}
+
 
 .options{
     display: flex;
@@ -267,7 +267,6 @@ a {
     height: 10rem;
 }
 .descr{
-    background-color: var(--color-1);
     padding: 0.5rem;
     align-items: center;
     justify-content: center;
@@ -277,6 +276,8 @@ a {
 .descr h3{
     text-align: center;
     padding-block: 1rem;
+    color: var(--color-restaurant-bar); 
+    text-shadow: var(--text-shadow); 
 }
 
 .call-area{
@@ -285,4 +286,53 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
+}
+.food{
+    background-image: url(../images/food/platter.jpeg);
+    background-size: cover;
+}
+
+.bar {
+    background-image: url(../images/bottles/bottle\ service.jpeg);
+    background-size: cover;
+}
+
+/* !restaurant starts here */
+.main{
+    background-image: url(../images/food/beef.jpg);
+    background-size: cover;
+}
+
+.snacks {
+    background-image: url(../images/food/sausage\ special.jpeg);
+    background-size: cover;
+}
+.beverages {
+    background-image: url(../images/food/african\ tea.webp);
+    background-size: cover;
+}
+
+.soft-drinks{
+    background-image: url(../images/food/coke.jpeg);
+    background-size: cover;
+}
+
+
+/* !bar starts here */
+
+.shots {
+    background-image: url(../images/drinks/rum\ shots.jpeg);
+    background-size: cover;
+}
+.cocktails {
+    background-image: url(../images/drinks/tequilar\ sunrise.jpeg);
+    background-size: cover;
+}
+.beers{
+    background-image: url(../images/beers/beers.webp);
+    background-size: cover;
+}
+.bottles{
+    background-image: url(../images/drinks/singleton\ shot\ 12yrs.webp);
+    background-size: cover;
 }
