@@ -225,3 +225,64 @@ a {
 .removeAll{
     background-color: var(--color-1);
 }
+
+/* index section */
+.btn-area{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    margin-top: 7rem;
+    align-items: center;
+}
+
+.black {
+    background-color: var(--color-4);
+}
+
+.options{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-inline: 1rem; 
+    padding: 0.665rem;
+    gap: 0.665rem;
+    box-shadow: var(--box-shadow-1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 20rem;
+    background-color: var(--color-4);
+}
+
+.foods{
+    width: 10rem;
+    
+}
+
+.foods img{
+    width: 100%;
+    background-size: cover;
+    padding: 0.655rem;
+    height: 10rem;
+}
+.descr{
+    background-color: var(--color-1);
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.descr h3{
+    text-align: center;
+    padding-block: 1rem;
+}
+
+.call-area{
+    background-color: var(--color-4);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}

@@ -188,8 +188,4 @@ let shopItemsData = [{
     img: "./images/beers/white cap crisp can .webp"
 }
 
-
-
-
-
 ]
