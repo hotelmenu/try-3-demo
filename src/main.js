@@ -3,9 +3,8 @@ let shop = document.getElementById('shop')
 
 let basket = JSON.parse(localStorage.getItem("data")) || []
 
-const vibrate = (ms) => {
-    navigator.vibrate(100)
-}
+const audio = new Audio(); 
+audio.src = "/src/click.mp3"
 
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData.map((x) => {
@@ -51,7 +50,7 @@ let increment = (id) => {
         search.item += 1;
     }
     update(selectedItem.id);
-    vibrate()
+    audio.play()
 }
 
 let decrement = (id) => {
@@ -69,7 +68,7 @@ let decrement = (id) => {
         search.item -= 1;
     }
     update(selectedItem.id);
-    vibrate()
+    audio.play()
 }
 
     
@@ -90,7 +89,6 @@ let update = (id) => {
         let productName = product.name;
         let productPrice = product.price;
     }
-    vibrate()
 }
 
 
@@ -98,6 +96,7 @@ let calculation = () => {
     let cartIcon = document.getElementById("cartAmount");
     cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
     localStorage.setItem("data", JSON.stringify(basket)); // Store the entire basket
+    audio.play()
 }
 
 

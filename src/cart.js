@@ -1,10 +1,8 @@
 let label = document.getElementById('label')
 let shoppingCart = document.getElementById('shopping-cart')
 let basket = JSON.parse(localStorage.getItem("data")) || []
-
-const vibrate = (ms) => {
-    navigator.vibrate(100)
-}
+const audio = new Audio(); 
+audio.src = "/src/click.mp3"
 
 let calculation = () => {
     let cartIcon = document.getElementById("cartAmount"); 
@@ -79,7 +77,7 @@ let increment = (id) => {
    update(selectedItem.id)
    calculation ()
    totalAmount()
-   vibrate()
+   audio.play()
 }
 
 
@@ -99,7 +97,7 @@ let decrement = (id) => {
     generateCartItems()
     calculation ()
     totalAmount()
-    vibrate()
+    audio.play()
 }
 
 
@@ -107,6 +105,7 @@ let decrement = (id) => {
 let update = (id) => {
     let search = basket.find((x) => x.id === id)
     document.getElementById(id).innerHTML = search.item; 
+    audio.play()
 }
 
 let removeItem = (id) => {
@@ -116,7 +115,7 @@ let removeItem = (id) => {
     generateCartItems()
     calculation ()
     totalAmount()
-    vibrate()
+    audio.play()
 }
 
 let totalAmount = () =>{
@@ -140,6 +139,7 @@ let clearCart = () => {
     generateCartItems()
     localStorage.setItem("data", JSON.stringify(basket))
     calculation ()
+    audio.play()
 }
 
 
@@ -178,7 +178,7 @@ function sendSMS() {
   
     // Open the SMS link to open the default messaging app with the precomposed message
     window.open(smsLink);
-    vibrate()
+    audio.play()
 }
 
 
