@@ -1097,6 +1097,707 @@ let shopItemsData = [{
     price: 600, 
     desc: "", 
     img: "./images/drinks/gin cooler .jpeg"
+}, 
+
+//bottles
+{
+    id: "bottle01", 
+    name: "Gilbey's Gin", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/gilbey's gin.jpeg"
+}, {
+    id: "bottle02", 
+    name: "Gilbey's Pink 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/gilbeys pink.jpeg"
+}, {
+    id: "bottle03", 
+    name: "Beefeater Clear 1ltr", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/beefeater clear.jpeg"
+}, {
+    id: "bottle04", 
+    name: "Beefeater Clear 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/beefeater clear.jpeg"
+}, {
+    id: "bottle05", 
+    name: "Beefeater Pink 750ml", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/beef eater pink.jpeg"
+}, {
+    id: "bottle06", 
+    name: "Hendricks Gin 750ml", 
+    price: 8000, 
+    desc: "", 
+    img: "./images/bottles/hendricks-gin.png"
+}, {
+    id: "bottle07", 
+    name: "Tanqueryay 10yrs 750ml", 
+    price: 7000, 
+    desc: "", 
+    img: "./images/bottles/tanquery .jpeg"
+}, {
+    id: "bottle08", 
+    name: "Tanqueray London Dry 5yrs 750ml", 
+    price: 6000, 
+    desc: "", 
+    img: "./images/bottles/tanquery .jpeg"
+}, {
+    id: "bottle09", 
+    name: "Tanqueray Sevilla 750ml", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/tanquery sevilla.jpeg"
+}, {
+    id: "bottle10", 
+    name: "Bombay Gin 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/bombay-sapphire-gin-1.png"
+}, {
+    id: "bottle11", 
+    name: "Tanqueray Lime 750ml", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/tanqueray lime.jpeg"
+}, {
+    id: "bottle12", 
+    name: "Tanquery Royale 750ml", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/tanquery 10 years.webp"
+}, {
+    id: "bottle13", 
+    name: "Gordon's Orange 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/gordons orange.webp"
+}, {
+    id: "bottle14", 
+    name: "Gordon's Dry 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "../images/bottles/gordons dry.jpeg"
+}, {
+    id: "bottle15", 
+    name: "Gordon's Lemon 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/gordons-scilian-lemon.webp"
+}, {
+    id: "bottle16", 
+    name: "Gordon's Pink 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/gordon's pink.jpeg"
+}, {
+    id: "bottle17", 
+    name: "Gilbey's Gin 350ml", 
+    price: 1500, 
+    desc: "", 
+    img: "./images/bottles/gilbeys 350.jpeg"
+}, {
+    id: "bottle18", 
+    name: "Gordon's Dry 1 Ltr", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/gordons dry.jpeg"
+}, {
+    id: "bottle19", 
+    name: "Beefeater Blood Orange 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/beef eater orange.avif"
+}, {
+    id: "bottle20", 
+    name: "Waragi", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/waragi.webp"
+}, {
+    id: "bottle21", 
+    name: "Viceroy 375ml", 
+    price: 1500, 
+    desc: "", 
+    img: "./images/bottles/viceroy.jpeg"
+}, {
+    id: "bottle22", 
+    name: "Viceroy 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/viceroy 750.jpeg"
+}, {
+    id: "bottle23", 
+    name: "Richot 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/richot.jpeg"
+}, {
+    id: "bottle24", 
+    name: "Captain Morgan Gold 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/captain morgan gold.jpeg"
+}, {
+    id: "bottle25", 
+    name: "Captain Morgan Spiced 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/captain morgan spcied.webp"
+}, {
+    id: "bottle26", 
+    name: "Captain Morgan Gold 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/captain morgan gold.jpeg"
+}, {
+    id: "bottle27", 
+    name: "Barcadi Oakhat 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/oakheart barcadi.jpeg"
+}, {
+    id: "bottle28", 
+    name: "Baileys 750ml", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/bailey's .webp"
+}
+, {
+    id: "bottle29", 
+    name: "Bailey's 1ltr", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/bailey's .webp"
+}, {
+    id: "bottle30", 
+    name: "Sheridan's 1ltr", 
+    price: 8000, 
+    desc: "", 
+    img: "./images/bottles/sheridans.jpeg"
+}
+, {
+    id: "bottle31", 
+    name: "Jose Guevo 750ml", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/jose-cuervo-gold-tequila.png"
+}, {
+    id: "bottle32", 
+    name: "Jaggermister 1ltr", 
+    price: 5000, 
+    desc: "", 
+    img: "./images/bottles/jaggermister.png"
+}, {
+    id: "bottle33", 
+    name: "Tequilar Camino 750ml", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/camino-gold-tequila.png"
+}, {
+    id: "bottle34", 
+    name: "Malibu 750ml", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/malibu 750ml.jpeg"
+}, {
+    id: "bottle31", 
+    name: "Jose Quervo 1ltr", 
+    price: 5000, 
+    desc: "", 
+    img: "./images/bottles/jose-cuervo-especial-silver.webp"
+}, {
+    id: "bottle35", 
+    name: "Amarula 1ltr", 
+    price: 5000, 
+    desc: "", 
+    img: "./images/bottles/amarula.jpeg"
+}, {
+    id: "bottle36", 
+    name: "Amarula 750ml", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/amarula.jpeg"
+}, {
+    id: "bottle37", 
+    name: "Ciroc 750ml", 
+    price: 5000, 
+    desc: "", 
+    img: "./images/bottles/ciroc.jpeg"
+}, {
+    id: "bottle38", 
+    name: "Sminoff Vodka 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/sminoff vodka 750ml.jpeg"
+}, {
+    id: "bottle39", 
+    name: "Absolute Vodka 1Ltr", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/absolute vodka.jpeg"
+}, {
+    id: "bottle40", 
+    name: "Sminoff Vodka 1 ltr", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/sminoff vodka 750ml.jpeg"
+}, {
+    id: "bottle41", 
+    name: "Sminoff Vodka 375ml", 
+    price: 1200, 
+    desc: "", 
+    img: "./images/bottles/sminoff 375.jpeg"
+}, {
+    id: "bottle42", 
+    name: "Ketel One 750ml", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/ketel one.jpeg"
+}, {
+    id: "bottle43", 
+    name: "William Lawson 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/william lawson 1ltr.jpeg"
+}, {
+    id: "bottle44", 
+    name: "Southern 750ml", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/southern comfort.jpeg"
+}, {
+    id: "bottle45", 
+    name: "William Lawson 1ltr", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/william lawson 1ltr.jpeg"
+}, {
+    id: "bottle46", 
+    name: "Southern 1ltr", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/southern comfort.jpeg"
+}, {
+    id: "bottle47", 
+    name: "Black and White 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/black and white .webp"
+}, {
+    id: "bottle48", 
+    name: "Black and White 375ml", 
+    price: 1500, 
+    desc: "", 
+    img: "./images/bottles/black375.jpeg"
+}, {
+    id: "bottle49", 
+    name: "Grants 1ltr", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/grants 1ltr.jpeg"
+}, {
+    id: "bottle50", 
+    name: "Johhny Walker Red 1ltr", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/johny walker red.jpeg"
+}, {
+    id: "bottle51", 
+    name: "Johhny Walker Red 750ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/johny walker red.jpeg"
+}, {
+    id: "bottle52", 
+    name: "Ballantine 750ml", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/ballantine 750.jpeg"
+}, {
+    id: "bottle53", 
+    name: "Johnny Walker Red 375ml", 
+    price: 2000, 
+    desc: "", 
+    img: "./images/bottles/johny walker red.jpeg"
+}, {
+    id: "bottle54", 
+    name: "Johnny Walker Black 1ltr", 
+    price: 6500, 
+    desc: "", 
+    img: "./images/bottles/johny double black .webp"
+}, {
+    id: "bottle55", 
+    name: "Jack Daniels 700ml", 
+    price: 6000, 
+    desc: "", 
+    img: "./images/bottles/jack daniels.jpeg"
+}, {
+    id: "bottle56", 
+    name: "Jack Daniels 1 ltr", 
+    price: 6500, 
+    desc: "", 
+    img: "./images/bottles/jack daniels.jpeg"
+}, {
+    id: "bottle57", 
+    name: "Jameson 1ltr", 
+    price: 5000, 
+    desc: "", 
+    img: "./images/bottles/jameson 1ltr.jpeg"
+}, {
+    id: "bottle58", 
+    name: "John Walker Black 375ml", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/johny walker black .jpeg"
+}, {
+    id: "bottle59", 
+    name: "Jameson 750ml", 
+    price: 4500, 
+    desc: "", 
+    img: "./images/bottles/jameson 1ltr.jpeg"
+}, {
+    id: "bottle60", 
+    name: "Chivas Regal 12yrs 750ml", 
+    price: 7000, 
+    desc: "", 
+    img: "./images/bottles/chivas 12.jpeg"
+}, {
+    id: "bottle61", 
+    name: "Famous Grouse 1ltr", 
+    price: 4000, 
+    desc: "", 
+    img: "./images/bottles/famous .png"
+}, {
+    id: "bottle62", 
+    name: "Johhny Walker Double Black 750ml", 
+    price: 9500, 
+    desc: "", 
+    img: "./images/bottles/johny double black .webp"
+}, {
+    id: "bottle63", 
+    name: "Famous Grouse 750 ml", 
+    price: 3500, 
+    desc: "", 
+    img: "./images/bottles/famous .png"
+}, {
+    id: "bottle64", 
+    name: "Glenlivet 12 rys 750ml", 
+    price: 9500, 
+    desc: "", 
+    img: "./images/bottles/glenlivet 12.jpeg"
+}, {
+    id: "bottle65", 
+    name: "Glenfiddich 12 yrs 750ml", 
+    price: 10000, 
+    desc: "", 
+    img: "./images/bottles/glen 12.jpeg"
+}, {
+    id: "bottle66", 
+    name: "Glenfiddich 15 yrs 750ml", 
+    price: 13000, 
+    desc: "", 
+    img: "./images/bottles/glenfiddich 15.jpeg"
+}, {
+    id: "bottle50", 
+    name: "Chivas Regal 12 Years 1 ltr", 
+    price: 8000, 
+    desc: "", 
+    img: "./images/bottles/chivas 12.jpeg"
+}, {
+    id: "bottle67", 
+    name: "Singleton 12yrs 750ml", 
+    price: 8000, 
+    desc: "", 
+    img: "./images/bottles/singleton 12.jpeg"
+}, {
+    id: "bottle68", 
+    name: "Johhny Walker Gold Reserve 750ml", 
+    price: 10000, 
+    desc: "", 
+    img: "./images/bottles/gold reserve johhny walker .jpeg"
+}, {
+    id: "bottle69", 
+    name: "Singleton 15yrs 750ml", 
+    price: 8500, 
+    desc: "", 
+    img: "./images/bottles/singleton 15.jpeg"
+}, {
+    id: "bottle70", 
+    name: "Black and white 1 ltr", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/black and white .webp"
+}, {
+    id: "bottle71", 
+    name: "Singleton 18yrs 750ml", 
+    price: 10000, 
+    desc: "", 
+    img: "./images/bottles/singleton 18.jpeg"
+}, {
+    id: "bottle72", 
+    name: "Jameson Black Barrel 750ml", 
+    price: 6000, 
+    desc: "", 
+    img: "./images/bottles/jameson black barrel.jpeg"
+}, {
+    id: "bottle73", 
+    name: "Glefiddich 18yrs 750ml", 
+    price: 17000, 
+    desc: "", 
+    img: "./images/bottles/glenfiddich 18.jpeg"
+}, {
+    id: "bottle74", 
+    name: "Johhny Walker Green 750ml", 
+    price: 9500, 
+    desc: "", 
+    img: "./images/bottles/green label johhny.jpeg"
+}, {
+    id: "bottle75", 
+    name: "Bulletin Bourbron 750ml", 
+    price: 6000, 
+    desc: "", 
+    img: "./images/bottles/bulletin .jpeg"
+}, {
+    id: "bottle76", 
+    name: "Johhny Walker 18yrs 750ml", 
+    price: 14500, 
+    desc: "", 
+    img: "./images/bottles/jonny 18.jpeg"
+}, {
+    id: "bottle77", 
+    name: "Dalwhinnie 750ml", 
+    price: 9000, 
+    desc: "", 
+    img: "./images/bottles/dalwhinnie.jpeg"
+}, {
+    id: "bottle78", 
+    name: "Jack Daniel's Honey 700ml", 
+    price: 7000, 
+    desc: "", 
+    img: "./images/bottles/jack daniels honey .jpeg"
+}, {
+    id: "bottle79", 
+    name: "John Walker Black 750ml", 
+    price: 6000, 
+    desc: "", 
+    img: "./images/bottles/johny walker black .jpeg"
+}, {
+    id: "bottle80", 
+    name: "Vat 69 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/vat 69.jpeg"
+}, {
+    id: "bottle81", 
+    name: "JB Whiskey 750ml", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/j&b-rare.webp"
+}, {
+    id: "bottle82", 
+    name: "Moet and Chandoney 750ml", 
+    price: 16000, 
+    desc: "", 
+    img: "./images/bottles/moet and chadonney .jpeg"
+}, {
+    id: "bottle83", 
+    name: "Martell vs 750ml", 
+    price: 9000, 
+    desc: "", 
+    img: "./images/bottles/martell-vs-single-distillery.webp"
+}, {
+    id: "bottle84", 
+    name: "Remy Martin VSOP 1ltr", 
+    price: 14000, 
+    desc: "", 
+    img: "./images/bottles/remy.jpeg"
+}, {
+    id: "bottle85", 
+    name: "Henessy VS 1ltr", 
+    price: 14000, 
+    desc: "", 
+    img: "./images/bottles/hennesy 1ltr.jpeg"
+}, {
+    id: "bottle86", 
+    name: "Hennesy VSOP 700ml", 
+    price: 16000, 
+    desc: "", 
+    img: "./images/bottles/hennesey vsop .jpeg"
+}, {
+    id: "bottle87", 
+    name: "Martell VSOP 750 ML", 
+    price: 13000, 
+    desc: "", 
+    img: "./images/bottles/martell vsop.jpeg"
+}, {
+    id: "bottle88", 
+    name: "Martell VS 1 ltr", 
+    price: 16500, 
+    desc: "", 
+    img: "./images/bottles/martell-vs-single-distillery.webp"
+}, {
+    id: "bottle89", 
+    name: "Hennesy VSOP 1Ltr", 
+    price: 18500, 
+    desc: "", 
+    img: "./images/bottles/hennesey vsop .jpeg"
+}, {
+    id: "bottle90", 
+    name: "Hennesy VSOP 700ml", 
+    price: 10000, 
+    desc: "", 
+    img: "./images/bottles/hennesey vsop .jpeg"
+}, {
+    id: "bottle91", 
+    name: "Drostdy Hof red 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/drostyhof red.jpeg"
+}, {
+    id: "bottle92", 
+    name: "Drostdy Hof White 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/drodsty white.jpeg"
+}, {
+    id: "bottle93", 
+    name: "Drostdy Hof red glass", 
+    price: 250, 
+    desc: "", 
+    img: "./images/bottles/red glass.jpeg"
+}, {
+    id: "bottle94", 
+    name: "Drostdy Hof White glass", 
+    price: 250, 
+    desc: "", 
+    img: "./images/bottles/white glass.jpeg"
+}, {
+    id: "bottle95", 
+    name: "Drostdy Hof White glass", 
+    price: 300, 
+    desc: "", 
+    img: "./images/bottles/white glass.jpeg"
+}, {
+    id: "bottle96", 
+    name: "Cellar Cask White 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/cellar cask.jpeg"
+}, {
+    id: "bottle97", 
+    name: "Cellar Cask Red 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/cellar red.jpeg"
+}, {
+    id: "bottle98", 
+    name: "Asconi White  750ml", 
+    price: 3000, 
+    desc: "", 
+    img: "./images/bottles/asconi white .jpeg"
+}, {
+    id: "bottle99", 
+    name: "Saint Celine 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/saint celine .jpeg"
+}, {
+    id: "bottle100", 
+    name: "4th Street Red Glass", 
+    price: 250, 
+    desc: "", 
+    img: "./images/bottles/red glass.jpeg"
+}, {
+    id: "bottle101", 
+    name: "4th Street White Glass", 
+    price: 250, 
+    desc: "", 
+    img: "./images/bottles/white glass.jpeg"
+}, {
+    id: "bottle102", 
+    name: "Caprice Red 1 ltr", 
+    price: 1500, 
+    desc: "", 
+    img: "./images/bottles/caprice red.jpeg"
+}, {
+    id: "bottle103", 
+    name: "Chamdor Sparkling Wine 750ml", 
+    price: 2000, 
+    desc: "", 
+    img: "./images/bottles/chamdor.png"
+}, {
+    id: "bottle104", 
+    name: "Caprice White 1 Ltr", 
+    price: 1500, 
+    desc: "", 
+    img: "./images/bottles/caprice white.jpeg"
+}, {
+    id: "bottle105", 
+    name: "Casa Buena White 1ltr", 
+    price: 1500, 
+    desc: "", 
+    img: "./images/bottles/casa buena white .jpeg"
+}, {
+    id: "bottle106", 
+    name: "Casa Buena Red 1ltr", 
+    price: 1500, 
+    desc: "", 
+    img: "./images/bottles/casa buena red.jpeg"
+}, {
+    id: "bottle109", 
+    name: "Robertson White 1ltr", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/robertson white.webp"
+}, {
+    id: "bottle110", 
+    name: "Robertson Red 750ml", 
+    price: 2500, 
+    desc: "", 
+    img: "./images/bottles/robertson red.jpeg"
+}, {
+    id: "bottle111", 
+    name: "Four Cousins White 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/four cousins white.jpeg"
+}, {
+    id: "bottle112", 
+    name: "Four Cousins Red 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/four cousins red.jpeg"
+}, {
+    id: "bottle113", 
+    name: "4th Street White 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/4th street white.jpeg"
+}, {
+    id: "bottle114", 
+    name: "4th Street Red 750ml", 
+    price: 1800, 
+    desc: "", 
+    img: "./images/bottles/4th street red.jpeg"
+}, {
+    id: "bottle115", 
+    name: "Bellair Gold 750ml", 
+    price: 10000, 
+    desc: "", 
+    img: "./images/bottles/belair].webp"
+}, {
+    id: "bottle116", 
+    name: "Bellair Black 750ml", 
+    price: 10000, 
+    desc: "", 
+    img: "./images/bottles/belair black .webp"
 }
 
 ]
